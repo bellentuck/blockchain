@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Bellefair|Trocchi|Bungee+Shade|Monoton|Codystar:300|League+Script|Chicle|Megrim|Shrikhand|Arimo);body {
+  height: 100vh;
+  background-color: #424472;
+  color: #defceb;
+  font-size: 15rem;
+  font-weight: 900;
+  font-family: "Bungee Shade", "Monoton", "serif"; }
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container .image-wrapper {
+    display: inline-block;
+    margin: 0 10px; }
+
+.images-container {
+  margin-left: 28%;
+  -webkit-animation-name: example;
+  animation-name: example;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s; }
+
+@-webkit-keyframes example {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes example {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.bunny {
+  -webkit-animation: hop 6s ease-in-out infinite, move 6s ease-out forwards;
+  animation: hop 6s ease-in-out infinite, move 6s ease-out forwards; }
+
+@-webkit-keyframes hop {
+  67% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); } }
+
+@keyframes hop {
+  67% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); } }
+
+@-webkit-keyframes move {
+  100% {
+    left: 400px; } }
+
+@keyframes move {
+  100% {
+    left: 400px; } }

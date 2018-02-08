@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair|Trocchi|Bungee+Shade|Monoton|Codystar:300|League+Script|Chicle|Megrim|Shrikhand|Arimo');
+
+$brand-purple: rgb(66, 68, 114);
+$brand-green: rgb(222, 252, 235);
+$font-size: 15rem;
+$font-family: 'Bungee Shade', 'Monoton', 'serif';
+
+body {
+  height: 100vh;
+  background-color: $brand-purple;
+  color: $brand-green;
+  font-size: $font-size;
+  font-weight: 900;
+  font-family: $font-family;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  .image-wrapper {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+.images-container {
+  margin-left: 28%;
+  animation-name: example;
+  animation-duration: 8s;
+}
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.bunny {
+  animation: hop 6s ease-in-out infinite,
+             move 6s ease-out forwards;
+
+  @keyframes hop {
+    67%  { transform: translateY(40px); }
+  }
+  @keyframes move {
+    100% { left: 400px; }
+  }
+}
